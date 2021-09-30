@@ -1,9 +1,9 @@
 {
-  "name": "Earthfield",
+  "name": "earthfield",
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "develop": "gridsome develop",
+    "serve": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {

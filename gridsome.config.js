@@ -8,4 +8,12 @@ module.exports = {
   siteName: 'Earthfield',
   plugins: [],
   port: 8090,
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `@import "@/assets/styles/variables.scss";
+        `
+      }
+    }
+  }
 }

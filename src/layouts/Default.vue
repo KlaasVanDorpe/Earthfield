@@ -1,53 +1,43 @@
 <template>
   <div>
-    <div class="wrapper">
-      <header>
-        <h1>Earthfield</h1>
-      </header>
-      <nav>
-        <ul>
-          <li>
-            <g-link to="/"><span>Home</span></g-link>
-          </li>
-          <li>
-            <g-link to="/teams"><span>Teams</span></g-link>
-          </li>
-          <li>
-            <g-link to="/achievements"><span>achievements</span></g-link>
-          </li>
-          <li>
-            <g-link to="/partners"><span>partners</span></g-link>
-          </li>
-          <li>
-            <g-link to="/faq"><span>FAQ</span></g-link>
-          </li>
-        </ul>
-      </nav>
+    <header>
+      <h1>Earthfield</h1>
+    </header>
+    <nav>
+      <div class="nav-wrapper">
+        <li>
+          <g-link to="/"><span>Home</span></g-link>
+        </li>
+        <li>
+          <g-link to="/teams"><span>Teams</span></g-link>
+        </li>
+        <li>
+          <g-link to="/achievements"><span>achievements</span></g-link>
+        </li>
+        <li>
+          <g-link to="/partners"><span>partners</span></g-link>
+        </li>
+        <li>
+          <g-link to="/faq"><span>FAQ</span></g-link>
+        </li>
+      </div>
+    </nav>
+    <main>
       <slot />
-    </div>
+    </main>
   </div>
 </template>
 
-<style>
+<style lang="scss">
 section {
   scroll-margin-top: 50px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-ul {
-  padding-left: 0px;
-  list-style-type: none;
 }
 
 p {
   margin: 0 0 20px;
 }
 
-.wrapper {
+main {
   width: 1200px;
   margin: auto;
 }
@@ -71,12 +61,12 @@ nav {
   font-size: 1.35em;
 }
 
-nav ul {
+nav .nav-wrapper {
+  @include wrapper;
   display: flex;
   flex-direction: row;
   align-items: stretch;
   height: 50px;
-  margin: 0px;
 }
 
 nav li {

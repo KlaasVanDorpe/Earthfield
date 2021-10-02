@@ -5,8 +5,9 @@
         <g-image
           src="@/assets/images/CSGO_logo.png"
           width="100px"
-          height="100px"
-          fit="contain"
+          height="84px"
+          fit="inside"
+          quality="100"
         />
         <h2>{{ igname }}</h2>
         <p>{{ name }}</p>
@@ -26,49 +27,43 @@
         </p>
       </div>
       <div class="social">
-        <ul>
-          <li>
-            <a :href="steam" rel="noopener noreferrer nofollow" target="_blank">
-              <g-image
-                src="@/assets/images/steam_logo.png"
-                width="40px"
-                height="40px"
-                fit="contain"
-                alt="steam"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              :href="facebook"
-              rel="noopener noreferrer nofollow"
-              target="_blank"
-            >
-              <g-image
-                src="@/assets/images/facebook_logo.png"
-                width="40px"
-                height="40px"
-                fit="contain"
-                alt="facebook"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              :href="twitter"
-              rel="noopener noreferrer nofollow"
-              target="_blank"
-            >
-              <g-image
-                src="@/assets/images/twitter_logo.png"
-                width="40px"
-                height="40px"
-                fit="contain"
-                alt="twitter"
-              />
-            </a>
-          </li>
-        </ul>
+        <li>
+          <a :href="steam" rel="noopener noreferrer nofollow" target="_blank">
+            <g-image
+              src="@/assets/images/steam_logo.png"
+              width="40px"
+              height="40px"
+              fit="fill"
+              alt="steam"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            :href="facebook"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+          >
+            <g-image
+              src="@/assets/images/facebook_logo.png"
+              width="40px"
+              height="40px"
+              fit="fill"
+              alt="facebook"
+            />
+          </a>
+        </li>
+        <li>
+          <a :href="twitter" rel="noopener noreferrer nofollow" target="_blank">
+            <g-image
+              src="@/assets/images/twitter_logo.png"
+              width="40px"
+              height="40px"
+              fit="fill"
+              alt="twitter"
+            />
+          </a>
+        </li>
       </div>
     </div>
     <div class="picture">
@@ -107,7 +102,7 @@ export default {
   display: flex;
   flex-direction: row;
   border-bottom: 2px solid #3a3c42;
-  padding: 40px 60px 0px 60px;
+  padding: 40px 0;
 
   & .info {
     width: 700px;
@@ -121,7 +116,8 @@ export default {
 
   & .name img {
     position: absolute;
-    left: -30px;
+    top: 13px;
+    left: 2px;
   }
 
   & .name h2 {
@@ -162,10 +158,6 @@ export default {
 
   & .social {
     padding-bottom: 10px;
-  }
-
-  & .social ul {
-    display: block;
   }
 
   .social li {

@@ -1,1 +1,6 @@
 $darkgray: rgb(31, 31, 31);
+
+@mixin wrapper {
+    max-width: 1200px;
+    margin: auto;
+}

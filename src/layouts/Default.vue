@@ -2,21 +2,11 @@
   <div>
     <nav>
       <div class="nav-wrapper">
-        <li>
-          <g-link to="/"><span>Home</span></g-link>
-        </li>
-        <li>
-          <g-link to="/teams"><span>Teams</span></g-link>
-        </li>
-        <li>
-          <g-link to="/achievements"><span>achievements</span></g-link>
-        </li>
-        <li>
-          <g-link to="/partners"><span>partners</span></g-link>
-        </li>
-        <li>
-          <g-link to="/faq"><span>FAQ</span></g-link>
-        </li>
+        <g-link to="/"><span>Home</span></g-link>
+        <g-link to="/teams"><span>Teams</span></g-link>
+        <g-link to="/achievements"><span>achievements</span></g-link>
+        <g-link to="/partners"><span>partners</span></g-link>
+        <g-link to="/faq"><span>FAQ</span></g-link>
       </div>
     </nav>
     <main>
@@ -44,65 +34,33 @@ nav {
   border-bottom: 2px solid $yellow;
   position: sticky;
   top: 0px;
+  height: 60px;
   font-size: 1.35em;
   z-index: 2;
-}
 
-nav .nav-wrapper {
-  @include wrapper;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  height: 50px;
-}
+  & .nav-wrapper {
+    @include wrapper;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100%;
+  }
 
-nav li {
-  display: flex;
-  flex-grow: 1;
-  width: 100%;
-}
+  & a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+  }
 
-nav li:hover {
-  background-color: #24262c;
-  color: hsl(55, 94%, 54.1%);
-}
+  & a:hover {
+    background-color: #24262c;
+    color: hsl(55, 94%, 54.1%);
+  }
 
-nav a {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: inherit;
-}
-
-nav .dropdown-content {
-  position: absolute;
-  display: none;
-  flex-direction: column;
-  background-color: #24262c;
-  color: #838796;
-  top: 50px;
-  width: 240px;
-}
-
-nav .dropdown-content a:last-child {
-  padding-bottom: 10px;
-}
-
-nav .dropdown-content a {
-  height: 40px;
-}
-
-nav .dropdown-content a:hover {
-  color: white;
-  transition: all 0.2s ease 0s;
-}
-
-nav li:nth-child(2):hover .dropdown-content {
-  display: flex;
-}
-
-nav span {
-  margin: auto;
+  & span {
+    margin: auto;
+  }
 }
 </style>

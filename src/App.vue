@@ -11,7 +11,10 @@ export default {
       immediate: true,
       deep: true,
       handler: function () {
-        if (this.$route.path !== "/construction") {
+        if (
+          this.$route.path !== "/construction" &&
+          this.$route.path !== "/construction/"
+        ) {
           this.$router.push("/construction");
         }
       },

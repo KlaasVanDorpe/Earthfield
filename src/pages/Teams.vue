@@ -1,9 +1,8 @@
 <template>
-  <Default>
-    <div class="teams"></div>
+  <div class="teams">
     <g-link to="/teams/csgo"><h3>csgo</h3></g-link>
     <g-link to="/teams/apex"><h3>apex</h3></g-link>
-  </Default>
+  </div>
 </template>
 
 <script>
@@ -12,6 +11,4 @@ export default {
 };
 </script>
 <style lang='scss'>
-.teams {
-}
 </style>

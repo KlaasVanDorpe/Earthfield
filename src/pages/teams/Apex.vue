@@ -1,7 +1,5 @@
 <template>
-  <Default>
-    <div class="apex"></div>
-  </Default>
+  <div class="apex"></div>
 </template>
 
 <script>
@@ -10,6 +8,4 @@ export default {
 };
 </script>
 <style lang='scss'>
-.apex {
-}
 </style>

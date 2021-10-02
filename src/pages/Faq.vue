@@ -1,11 +1,9 @@
 <template>
-  <Default>
-    <div class="faq">
-      <section class="FAQ" id="FAQ">
-        <h2>FAQ</h2>
-      </section>
-    </div>
-  </Default>
+  <div class="faq">
+    <section class="FAQ" id="FAQ">
+      <h2>FAQ</h2>
+    </section>
+  </div>
 </template>
 
 <script>

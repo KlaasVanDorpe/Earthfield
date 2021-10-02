@@ -1,5 +1,5 @@
 <template>
-  <Default>
+  <div class="index">
     <main>
       <section class="about-us" id="about-us">
         <h2>ABOUT US</h2>
@@ -26,7 +26,7 @@
       <div class="social-media-list"></div>
       <!-- <img src="img/footer-logo.png" alt="good luck have fun" /> -->
     </footer>
-  </Default>
+  </div>
 </template>
 
 <script>

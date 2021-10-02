@@ -29,11 +29,6 @@
 </template>
 
 <style>
-body {
-  font-family: "Poppins", sans-serif;
-  color: white;
-}
-
 section {
   scroll-margin-top: 50px;
 }
@@ -54,7 +49,6 @@ p {
 
 .wrapper {
   width: 1200px;
-  background-color: black;
   margin: auto;
 }
 

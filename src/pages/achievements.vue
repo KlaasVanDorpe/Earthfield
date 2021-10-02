@@ -1,27 +1,25 @@
 <template>
-  <Default>
-    <div class="achievements">
-      <h2>ACHIEVEMENTS</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>date</th>
-            <th>tournament</th>
-            <th>oponent</th>
-            <th>result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>16.10.2020</td>
-            <td>kayzer single elimination</td>
-            <td>4 vrienden & Jasper</td>
-            <td>9 - 16</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </Default>
+  <div class="achievements">
+    <h2>ACHIEVEMENTS</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>date</th>
+          <th>tournament</th>
+          <th>oponent</th>
+          <th>result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>16.10.2020</td>
+          <td>kayzer single elimination</td>
+          <td>4 vrienden & Jasper</td>
+          <td>9 - 16</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <script>

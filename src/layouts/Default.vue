@@ -1,8 +1,5 @@
 <template>
   <div>
-    <header>
-      <h1>Earthfield</h1>
-    </header>
     <nav>
       <div class="nav-wrapper">
         <li>
@@ -42,23 +39,13 @@ main {
   margin: auto;
 }
 
-header {
-  /* background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.7),
-      60%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("img/background_header.jpg"); */
-  background-size: cover;
-  background-position: center;
-}
-
 nav {
-  background-color: #333640;
+  background-color: $darkgray;
+  border-bottom: 2px solid $yellow;
   position: sticky;
   top: 0px;
   font-size: 1.35em;
+  z-index: 2;
 }
 
 nav .nav-wrapper {

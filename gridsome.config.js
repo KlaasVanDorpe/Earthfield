@@ -22,13 +22,9 @@ module.exports = {
     })
   },
   siteName: 'Earthfield',
+  titleTemplate: 'Earthfield',
   plugins: [],
+  icon: './src/assets/images/favicon-32x32.png',
   port: 8090,
-  css: {
-    loaderOptions: {
-      sass: {
-        additionalData: `@import "@/assets/styles/variables.scss";`
-      }
-    }
-  }
+
 }

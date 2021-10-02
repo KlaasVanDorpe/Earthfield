@@ -1,17 +1,11 @@
 <template>
   <Default>
-    <transition>
-      <router-view />
-    </transition>
+    <router-view />
   </Default>
 </template>
 
 <script>
-export default {
-  metaInfo: {
-    title: "Hello, world!",
-  },
-};
+export default {};
 </script>
 
 <style lang="scss">

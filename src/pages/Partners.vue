@@ -39,10 +39,13 @@
       </article>
     </div>
     <div class="partner">
-      <!-- <img
-              src="img/Secret-Lab-Logo_white.png.webp"
-              alt="logo of secret lab"
-            /> -->
+      <g-image
+        src="@/assets/images/Secret-Lab-Logo_white.png.webp"
+        width="300px"
+        fit="inside"
+        quality="100"
+        alt="logo of secret lab"
+      />
       <article>
         <h3>secret lab</h3>
         <p>

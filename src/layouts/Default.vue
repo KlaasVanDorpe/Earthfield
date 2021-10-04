@@ -68,7 +68,6 @@ header {
     margin-right: 1rem;
 
     & :hover {
-      background-color: #24262c;
       color: hsl(55, 94%, 54.1%);
     }
 

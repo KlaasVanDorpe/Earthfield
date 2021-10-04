@@ -95,7 +95,7 @@ export default {
         {
           igname: "UNKNOWNERROR",
           name: "Unknown",
-          countryCity: "Belgium, Ertvelde",
+          countryCity: "unknown",
           role: "Ward, Shotgun",
           dateBirth: "unknown",
           experience: "Like, 5 hours max",
